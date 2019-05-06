@@ -187,8 +187,8 @@ SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get('AUTH_FACEBOOK_KEY', '')
 SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get('AUTH_FACEBOOK_SECRET', '')
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-  'locale': 'ru_RU',
-  'fields': 'id, name, email'
+    'locale': 'ru_RU',
+    'fields': 'id, name, email'
 }
 # TODO: add alert when facebook account haven't email
 
