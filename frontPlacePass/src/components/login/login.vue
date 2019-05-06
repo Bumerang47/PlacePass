@@ -14,7 +14,7 @@
           i.material-icons.form-item__placeholder-icon mail_outline
           span.form-item__placeholder-text E-mail
         input.form-item__input(
-          name="email" id="email" ref="email"
+          name="email" id="email" ref="email" autocomplete="username"
           v-validate="'required|email'" v-model="email"
           @blur="clearFocus()"
         )
@@ -27,7 +27,7 @@
           i.material-icons.form-item__placeholder-icon lock_open
           span.form-item__placeholder-text Password
         input.form-item__input(
-          type="password" name="password" id="password" ref="password"
+          type="password" name="password" id="password" ref="password" autocomplete="current-password"
           v-validate="{ required: true }" v-model="password"
           @blur="clearFocus()"
         )
