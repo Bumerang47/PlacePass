@@ -5,7 +5,9 @@
         :href="`https://www.facebook.com/v3.3/dialog/oauth?" +
           "client_id=${ authFacebookKey }" +
           "&redirect_uri=${ this.socialCallbackURL }?provider=facebook" +
-          "&state={st=state123abc,ds=123456789}`"
+          "&state={st=state123abc,ds=123456789}" +
+          "&auth_type=rerequest" +
+          "&scope=email`"
         )
         img.alter-signin__logo(src="@//assets//facebook-logo.svg")
         | facebook
