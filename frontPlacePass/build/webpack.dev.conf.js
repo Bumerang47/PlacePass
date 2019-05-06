@@ -21,6 +21,7 @@ const https_options = {
 }
 
 const devWebpackConfig = merge(baseWebpackConfig, {
+  mode: 'development',
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
   },
