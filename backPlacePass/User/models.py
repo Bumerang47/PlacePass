@@ -38,6 +38,7 @@ class User(AbstractUser):
     username = None
     email = models.EmailField(_('email address'), unique=True)
     first_name = models.CharField(_('first name'), max_length=30, blank=False)
+    receive_offers = models.BooleanField(default=False)
 
     objects = UserManager()
 
