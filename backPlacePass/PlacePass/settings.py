@@ -26,7 +26,7 @@ SECRET_KEY = '&&z=9irkot%s%2z$(oitv)s6rg8wx6=!d_8h1!fq&1a)!rt1yt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG_VALUE', '') == 'TRUE'
 
-ALLOWED_HOSTS = ['ppass.uliantsev.name', 'uliantsev.name']
+ALLOWED_HOSTS = ['ppass.uliantsev.name', 'ppass.uliantsev.name:8000', 'ppass.uliantsev.name:8080', 'uliantsev.name']
 
 
 # Application definition
@@ -156,6 +156,8 @@ APPEND_SLASH = True
 
 CORS_ORIGIN_WHITELIST = (
     'ppass.uliantsev.name',
+    'ppass.uliantsev.name:8000',
+    'ppass.uliantsev.name:8080',
 )
 
 AUTHENTICATION_BACKENDS = (
