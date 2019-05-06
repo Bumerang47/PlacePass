@@ -11,7 +11,7 @@ import store from './store'
 Vue.config.productionTip = false
 
 Vue.prototype.$http = axios
-Vue.prototype.$http.defaults.baseURL = 'https://uliantsev.name:8000/'
+Vue.prototype.$http.defaults.baseURL = 'https://ppass.uliantsev.name/'
 
 const token = localStorage.getItem('access-token')
 if (token) {
