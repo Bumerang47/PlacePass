@@ -1,3 +1,3 @@
-from django.test import TestCase
+# from django.test import TestCase
 
-# Create your tests here.
+# TODO: add tests here, # TODO: add tests here, also the sign up workflow through facebook without email fields

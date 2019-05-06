@@ -190,6 +190,8 @@ SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
   'locale': 'ru_RU',
   'fields': 'id, name, email'
 }
+# TODO: add alert when facebook account haven't email
+
 SOCIAL_AUTH_FACEBOOK_API_VERSION = '3.3'
 SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_details',
