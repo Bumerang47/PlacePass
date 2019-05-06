@@ -90,7 +90,6 @@ const actions = {
   },
   [types.AUTH_SIGNUP]: ({commit, dispatch}, user) => {
     return new Promise((resolve, reject) => { // The Promise used for router redirect in login
-      commit(types.AUTH_SIGNUP)
       user['username'] = user['email']
 
       axios.post('/api/user/', user)
