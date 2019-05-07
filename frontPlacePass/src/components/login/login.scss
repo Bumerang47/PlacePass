@@ -65,12 +65,13 @@
 }
 .form-item__error {
   position: absolute;
-  bottom: -0.8em;
+  top: 75%;
   left: 45px;
   background-color: #fff;
   padding: 0 5px;
   color: $error-color;
   font-size: 11px;
+  text-align: end;
 }
 
 .form-item__input {
