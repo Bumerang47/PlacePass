@@ -17,7 +17,6 @@ const fs = require('fs');
 const https_options = {
   key: fs.readFileSync('./certs/uliantsev.name.key.insecure'),
   cert: fs.readFileSync('./certs/uliantsev.name.crt'),
-  ca: fs.readFileSync('./certs/ca.crt'),
 }
 
 const devWebpackConfig = merge(baseWebpackConfig, {
