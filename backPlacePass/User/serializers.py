@@ -1,4 +1,7 @@
 
+from django.core import exceptions
+from django.contrib.auth import password_validation
+
 from rest_framework import serializers
 
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -63,6 +66,10 @@ class UserSerializer(serializers.ModelSerializer):
         errors = dict()
         if password != confirm_password:
             errors['confirm_password'] = ['Passwords do not match']
+        try:
+            password_validation.validate_password(password=password, user=User)
+        except exceptions.ValidationError as e:
+            errors['password'] = list(e.messages)
 
         if errors:
             raise serializers.ValidationError(errors)
